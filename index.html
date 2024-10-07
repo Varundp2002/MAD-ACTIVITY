@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Emotion Recognition Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slideshow-container">
+
+        <div class="slide fade">
+            <h1>Facial Emotion Recognition</h1>
+            <p>Facial Emotion Recognition (FER) is a technology that helps computers understand human emotions by analyzing facial expressions. 
+                It's like teaching a computer to "read" feelings just by looking at someone's face.<br><br>
+                Facial Emotion Recognition (FER) is a technology that analyzes facial expressions to identify emotions such as happiness, sadness, anger, surprise, fear, disgust, and neutrality.
+            </p>
+        </div>
+
+        <div class="slide fade">
+            <h1>Technique 1: Feature-Based Methods</h1>
+            <p>Feature-based methods involve detecting facial landmarks and extracting features to classify emotions.</p>
+        </div>
+
+        <div class="slide fade">
+            <h1>ADVANTAGES</h1>
+            <p>
+
+                <strong> User Experience :</strong><br>
+                1. Personalization: Adapts to user emotions for more tailored interactions.<br>
+                2. Adaptive Interfaces: Adjusts in real-time based on mood.
+                <br>
+                <strong>Customer Service:</strong>  <br>
+                1. Immediate Feedback: Quickly addresses customer satisfaction.<br>
+                2. Training Tool: Helps train service reps with emotional insights.
+                <br>
+                <strong>Benefits :</strong> <br>
+                Mental Health Monitoring: Detects mood changes for early intervention.<br>
+                <br><br>
+                <strong>Security and Safety :</strong><br>
+                1. Surveillance: Identifies suspicious behavior.<br>
+                2. Fraud Prevention: Detects stress or unusual behavior in transactions<br>
+                <br><br>
+                <strong>Educational support</strong><br>
+                       1. Helps teachers to understand student emotions like frustration <br>
+                       <br>
+                </p>
+        </div>
+
+        <div class="slide fade">
+            <h1>Technique 3: Hybrid Approaches</h1>
+            <p>Hybrid approaches combine feature-based methods and deep learning for improved accuracy in emotion recognition.</p>
+        </div>
+
+        <div class="slide fade">
+            <h1>Conclusion</h1>
+            <p>Facial emotion recognition has applications in various fields including psychology, marketing, and human-computer interaction.</p>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) {slideIndex = 0}
+            if (n < 0) {slideIndex = slides.length - 1}
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

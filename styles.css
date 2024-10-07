@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    font-color:red;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 900px;
+    max-height: 80%;
+    margin: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color:cyan ;
+   font-style:oblique;
+   font-size: large;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
